@@ -1,12 +1,12 @@
 {
-	"name": "loading",
+	"name": "vue-loading",
 	"version": "0.0.1",
-	"description": "'loading'是一个基于VUE实现的加载提示组件，也可以作为组件。",
-	"main": "dist/loading.js",
-	"unpkg": "dist/loading.js",
+	"description": "'vue-loading'是一个基于VUE实现的加载提示组件，也可以作为组件。",
+	"main": "dist/vue-loading.js",
+	"unpkg": "dist/vue-loading.js",
 	"repository": {
 		"type": "git",
-		"url": "https://github.com/yujinjin/loading.git"
+		"url": "https://github.com/yujinjin/vue-loading.git"
 	},
 	"scripts": {
 		"demo": "webpack --config config/demo.config.js",
@@ -20,7 +20,7 @@
 	"author": "jinyu <yujinjin9@126.com>",
 	"license": "MIT",
 	"bugs": {
-		"url": "https://github.com/yujinjin/loading/issues"
+		"url": "https://github.com/yujinjin/vue-loading/issues"
 	},
 	"dependencies": {
 		"vue": "^2.5.9"

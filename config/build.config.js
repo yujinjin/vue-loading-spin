@@ -15,7 +15,6 @@ const config = {
     },
     output: {
         path: path.resolve(__dirname, '../demo/build'),
-//      publicPath: "https://yujinjin.github.io/list-pull-loading/", 
         publicPath: "./", 
         filename: "build.[hash].js"
     },

@@ -5,8 +5,8 @@
 import babelPolyfill from 'babel-polyfill'
 import Vue from 'vue'
 import vueApp from "./app"
-import Loading from '../dist/loading.js'
-import "../dist/loading.css"
+import Loading from '../dist/vue-loading.js'
+import "../dist/vue-loading.css"
 Vue.use(Loading);
 let VueApp = Vue.extend(vueApp);
 new VueApp({name: "app"}).$mount('#app');

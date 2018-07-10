@@ -1,5 +1,5 @@
 <template>
-	<div class="loading" :class="{'mask': isShowMask, 'show': isShow, 'fadeIn': isShoAnimation, 'fixed': isFixed}" @touchmove.stop.prevent @click.stop.prevent="loadingFadeClick">
+	<div class="loading" :class="{'mask': isShowMask, 'show': isShow, 'fadeIn': isShowAnimation, 'fixed': isFixed}" @touchmove.stop.prevent @click.stop.prevent="loadingFadeClick">
 		<div class="loading-content">
 			<slot>
 			<span class="loading-icon progress">
@@ -54,11 +54,11 @@
 		data: function() {
 			return {
 				isShow: false, // 是否显示
-				isFixed: false, // 是否固定位置
+				isFixed: false, // 是否生成绝对定位的元素，相对于浏览器窗口进行定位。
 				isShowMask: false, // 是否显示遮罩背景
 				autoRefresh: false, // 是否自动刷新
-				isShoAnimation: false, // 是否显示动画效果
-				indicatorText: "加载中...", // 网络请求超时啦，轻触自动刷新
+				isShowAnimation: false, // 是否显示动画效果
+				indicatorText: "加载中...", // 提示文案，网络请求超时啦，轻触自动刷新
 				onHide: null // 隐藏回调函数
 			}
 		},
@@ -95,7 +95,7 @@
 				if(typeof(this.options.isShowMask) === "boolean") this.isShowMask = this.options.isShowMask;
 				if(typeof(this.options.autoRefresh) === "boolean") this.autoRefresh = this.options.autoRefresh;
 				if(typeof(this.options.autoRefresh) === "boolean") this.autoRefresh = this.options.autoRefresh;
-				if(typeof(this.options.isShoAnimation) === "boolean") this.isShoAnimation = this.options.isShoAnimation;
+				if(typeof(this.options.isShowAnimation) === "boolean") this.isShowAnimation = this.options.isShowAnimation;
 				if(this.options.indicatorText && typeof(this.options.indicatorText) === "string") this.indicatorText = this.options.indicatorText;
 			},
 			// 显示
@@ -222,6 +222,8 @@
 					svg {
 						height:12vw;
 						width: 12vw;
+						max-height: 60px;
+						max-width: 60px;
 					}
 				}
 				

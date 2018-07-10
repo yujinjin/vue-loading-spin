@@ -2,7 +2,7 @@
 	<div class="view">
 		<header class="navbar">
             <a class="icon-left"></a>
-            <div class="center">加载提示组件</div>
+            <div class="center">加载提示插件</div>
             <a class="right-bar-text"></a>
 	    </header>
 		<div class="page content">
@@ -35,6 +35,7 @@ export default {
     	},
     	showLoadingComponent(){
     		this.isShow = true;
+    		setTimeout(() => this.isShow = false, 3000);
     	}
     }
 }

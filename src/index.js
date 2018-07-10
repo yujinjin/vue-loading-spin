@@ -13,7 +13,7 @@ export default (function(){
 	// 默认配置选项
 	let defaults = {
 		isFixed: true, // 是否固定位置
-		isShoAnimation: true // 是否显示动画效果
+		isShowAnimation: true // 是否显示动画效果
 	};
 	
 	//创建实例
