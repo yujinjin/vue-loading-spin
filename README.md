@@ -1,11 +1,11 @@
-## loading
-loading是基于VUE实现的插件，同时也支持作为组件来使用，加载的图标用的是vue的默认插槽，所以可以自定义。
+## vue-loading-spin
+vue-loading-spin是基于VUE实现的插件，同时也支持作为组件来使用。默认加载的图标是一个svg旋转的菊花，它用的是vue的默认插槽，也可以根据实际的业务需要自定义其他图标。
 
 ## 运行项目
 clone项目到本地，进入项目文件夹，安装依赖
 
 ```javascript
-git clone https://github.com/yujinjin/vue-loading.git
+git clone https://github.com/yujinjin/vue-loading-spin.git
 cd loading
 npm install
 ```
@@ -20,7 +20,7 @@ npm run compile
 
 ## NPM
 ```javascript
-npm install vue-loading
+npm install vue-loading-spin
 ```
 ## 依赖
 - VUE
@@ -29,8 +29,8 @@ npm install vue-loading
 作为插件
 ```javascript
 import Vue from 'vue'
-import Loading from 'vue-loading'
-import 'vue-loading/dist/vue-loading.css'
+import Loading from 'vue-loading-spin'
+import 'vue-loading-spin/dist/loading.css'
 
 // VUE use
 Vue.use(Loading);

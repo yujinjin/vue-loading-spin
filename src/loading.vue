@@ -94,7 +94,6 @@
 				if(typeof(this.options.isFixed) === "boolean") this.isFixed = this.options.isFixed;
 				if(typeof(this.options.isShowMask) === "boolean") this.isShowMask = this.options.isShowMask;
 				if(typeof(this.options.autoRefresh) === "boolean") this.autoRefresh = this.options.autoRefresh;
-				if(typeof(this.options.autoRefresh) === "boolean") this.autoRefresh = this.options.autoRefresh;
 				if(typeof(this.options.isShowAnimation) === "boolean") this.isShowAnimation = this.options.isShowAnimation;
 				if(this.options.indicatorText && typeof(this.options.indicatorText) === "string") this.indicatorText = this.options.indicatorText;
 			},

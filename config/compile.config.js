@@ -10,8 +10,8 @@ const config = {
     output: {
         path: path.resolve(__dirname, '../dist'),
         publicPath: "/",
-        filename: "vue-loading.js",
-        library: 'vue-loading',
+        filename: "loading.js",
+        library: 'loading',
         libraryTarget: 'umd'
     },
     module: {
@@ -125,7 +125,7 @@ const config = {
     plugins: [
     	new CleanWebpackPlugin(['dist/*.*', 'build/*.*'], {root: path.resolve(__dirname, '../'), verbose: true, dry: false}),
         new ExtractTextPlugin({
-			filename: "vue-loading.css",
+			filename: "loading.css",
 			allChunks: true
 		}), //必须要allChunks设置为true,不然webpack编译会报错
         //显示构建进度
