@@ -4,9 +4,10 @@
  * 描述：加载插件
  */
 import Loading from './loading.vue';
+import Vue from 'vue';
 
 export default (function(){
-	let LoadingConstructor = null;
+	let LoadingConstructor = Vue.extend(Loading);
 	// 弹窗实例
 	let loadingInstance = null;
 	
@@ -58,7 +59,6 @@ export default (function(){
 			if(options) {
 				defaults = Object.assign(defaults, options);
 			}
-			LoadingConstructor = Vue.extend(Loading);
 			Vue.prototype.$showLoading = loading.show;
 			Vue.prototype.$hideLoading = loading.hide;
 			Vue.prototype.$showNetTimeout = loading.showNetTimeout;
@@ -67,6 +67,12 @@ export default (function(){
 				Vue.component('loading', Loading);
 			}
 			delete defaults.isComponent;
+		},
+		get(options) {
+			if(options) {
+				defaults = Object.assign(defaults, options);
+			}
+			return {showLoading: loading.show, hideLoading: loading.hide, showNetTimeout: loading.showNetTimeout};
 		}
 	}
 })()

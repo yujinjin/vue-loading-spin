@@ -42,6 +42,17 @@ Vue.use(Loading, {
 });
 
 ```
+```
+作为JS 对象
+```javascript
+import Loading from 'vue-loading-spin'
+import 'vue-loading-spin/dist/loading.css'
+
+let loading = Loading.get({});
+loading.showLoading();
+loading.hideLoading();
+loading.showNetTimeout();
+```
 ## 配置选项
 
 名称 | 描述 | 默认值 | 可选项
