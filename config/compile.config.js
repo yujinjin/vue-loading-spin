@@ -14,6 +14,9 @@ const config = {
         library: 'loading',
         libraryTarget: 'umd'
     },
+    externals: {
+    	vue: 'vue'
+    },
     module: {
         rules: [{
             test: /\.html$/,
