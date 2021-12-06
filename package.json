@@ -1,9 +1,9 @@
 {
     "name": "vue-loading-spin",
-    "version": "1.0.1",
+    "version": "1.0.2",
     "description": "'vue-loading-spin'是一个基于VUE实现的加载提示组件，也可以作为组件。",
-    "main": "dist/loading.js",
-    "unpkg": "dist/loading.js",
+    "main": "dist/vue-loading-spin.umd.min.js",
+    "module": "src/index.js",
     "repository": {
         "type": "git",
         "url": "https://github.com/yujinjin/vue-loading-spin.git"
